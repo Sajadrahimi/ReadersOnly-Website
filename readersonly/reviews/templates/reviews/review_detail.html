@@ -1,0 +1,4 @@
+<h2><a href="{% url 'reviews:book_detail' review.book.id %}">{{ review.book.name }}</a></h2>
+<p>{{ review.pub_date }}</p>
+<p>{{ review.comment }}</p>
+ <h4>Rated {{ review.rating }} of 5 by {{ review.user_name }}</a> </h4> 

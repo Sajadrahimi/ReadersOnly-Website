@@ -5,6 +5,7 @@
     {% for review in latest_review_list %}
     <div>
         <h4>
+        <a href="{% url 'reviews:review_detail' review.id %}">
         {{ review.book.name }}
         </a>
         </h4>
