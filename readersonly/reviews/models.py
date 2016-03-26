@@ -4,7 +4,6 @@ import numpy as np
 #book and review model entities sub classes django.db.models.Model
 class Book(models.Model):
     name = models.CharField(max_length=200)
-
     def average_rating(self):
         all_ratings = map(lambda x: x.rating, self.review_set.all())
         return np.mean(all_ratings)
