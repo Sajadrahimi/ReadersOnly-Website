@@ -31,7 +31,7 @@ def book_detail(request, book_id):
     form = ReviewForm()
     return render(request, 'reviews/book_detail.html', {'book': book, 'form': form})
 
-
+@login_required
 def add_review(request, book_id):
     book = get_object_or_404(Book, pk=book_id)
     form = ReviewForm(request.POST)

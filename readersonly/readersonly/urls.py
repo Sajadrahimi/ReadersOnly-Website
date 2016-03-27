@@ -23,4 +23,5 @@ urlpatterns = [
     # including our reviews app in the project urls
     # url(r'^$', include('reviews.urls', namespace="reviews")),
      url(r'^reviews/', include('reviews.urls', namespace="reviews")),
+     url('^accounts/', include('django.contrib.auth.urls')),
 ]
