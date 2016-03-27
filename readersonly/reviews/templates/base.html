@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Readers Only</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        
+    </head>
+    <body>
+<div class="container">
+    <nav class="navbar navbar-default">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="{% url 'reviews:review_list' %}">Readers Only</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="{% url 'reviews:book_list' %}">book list</a></li>
+                <li><a href="{% url 'reviews:review_list' %}">Home</a></li>
+            </ul>
+         
+        </div>
+    </nav>
+    
+
+ </body>
+</html>
