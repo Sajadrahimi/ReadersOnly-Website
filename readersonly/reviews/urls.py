@@ -10,4 +10,5 @@ urlpatterns = [
     url(r'^book$', views.book_list, name='book_list'),
     # ex: /book/5/
     url(r'^book/(?P<book_id>[0-9]+)/$', views.book_detail, name='book_detail'),
+    url(r'^book/(?P<wine_id>[0-9]+)/add_review/$', views.add_review, name='add_review'),
 ]

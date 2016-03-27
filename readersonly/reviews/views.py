@@ -1,7 +1,10 @@
 from django.shortcuts import get_object_or_404, render
 
 from .models import Review, Book
-
+from django.http import HttpResponseRedirect
+from django.core.urlresolvers import reverse
+from .forms import ReviewForm
+import datetime
 # Create your views here.
 #views with different url mappings
 
